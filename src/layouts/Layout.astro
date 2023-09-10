@@ -4,13 +4,13 @@ import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
 }
-import { ViewTransitions } from "astro:transitions";
+import { ViewTransitions, slide } from "astro:transitions";
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" transition:animate="slide">
+<html lang="en" transition:animate={slide({ duration: "1s" })}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
