@@ -1,6 +1,7 @@
 ---
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
+import PodcastPlayer  from "../components/PodcastPlayer.astro";
 interface Props {
   title: string;
 }
@@ -26,6 +27,7 @@ const { title } = Astro.props;
     <slot />
 
     <Footer />
+    <PodcastPlayer />
     <style is:global>
       html {
         font-family: system-ui, sans-serif;
